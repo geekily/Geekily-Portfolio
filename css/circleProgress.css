@@ -1,0 +1,206 @@
+.circleProgress{
+    margin-top: 0%;
+    margin-left: 5%;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.circleProgress-active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+#java .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_java.png') no-repeat;
+    background-size:40%;
+    background-position: center;
+    background-position-y: 44%;
+}
+#java .pc-bg{
+    stroke:#E1E1E1;
+}
+#java .pc-fill{
+    stroke:#242424;
+}
+#oracle .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_oracle.png') no-repeat;
+    background-size:70%;
+    background-position: center;
+    background-position-y: 45%;
+}
+#oracle .pc-bg{
+    stroke:#E1E1E1;
+}
+#oracle .pc-fill{
+    stroke:#242424;
+}
+#javascript .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_javascript.png') no-repeat;
+    background-size:38%;
+    background-position: center;
+    background-position-y: 47%;
+}
+#javascript .pc-bg{
+    stroke:#E1E1E1;
+}
+#javascript .pc-fill{
+    stroke:#242424;
+}
+#jquery .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_jquary.png') no-repeat;
+    background-size:46%;
+    background-position: center;
+    background-position-y: 51%;
+}
+#jquery .pc-bg{
+    stroke:#E1E1E1;
+}
+#jquery .pc-fill{
+    stroke:#242424;
+}
+#ajax .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_ajax.png') no-repeat;
+    background-size:65%;
+    background-position: center;
+    background-position-y: 48%;
+}
+#ajax .pc-bg{
+    stroke:#E1E1E1;
+}
+#ajax .pc-fill{
+    stroke:#242424;
+}
+#nodejs .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_nodejs.png') no-repeat;
+    background-size:65%;
+    background-position: center;
+    background-position-y: 60%;
+}
+#nodejs .pc-bg{
+    stroke:#E1E1E1;
+}
+#nodejs .pc-fill{
+    stroke:#242424;
+}
+#express .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_express.png') no-repeat;
+    background-size:65%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#express .pc-bg{
+    stroke:#E1E1E1;
+}
+#express .pc-fill{
+    stroke:#242424;
+}
+#html5 .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_html5.png') no-repeat;
+    background-size:52%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#html5 .pc-bg{
+    stroke:#E1E1E1;
+}
+#html5 .pc-fill{
+    stroke:#242424;
+}
+#css3 .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_css3.png') no-repeat;
+    background-size:40%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#css3 .pc-bg{
+    stroke:#E1E1E1;
+}
+#css3 .pc-fill{
+    stroke:#242424;
+}
+#mongodb .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_mongodb.png') no-repeat;
+    background-size:50%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#mongodb .pc-bg{
+    stroke:#E1E1E1;
+}
+#mongodb .pc-fill{
+    stroke:#242424;
+}
+#mongoose .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_mongoose.png') no-repeat;
+    background-size:55%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#mongoose .pc-bg{
+    stroke:#E1E1E1;
+}
+#mongoose .pc-fill{
+    stroke:#242424;
+}
+#english .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_english.png') no-repeat;
+    background-size:60%;
+    background-position: center;
+    background-position-y: 54%;
+}
+#english .pc-bg{
+    stroke:#E1E1E1;
+}
+#english .pc-fill{
+    stroke:#242424;
+}
+#hancomHangul .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_hancomHangul.png') no-repeat;
+    background-size:45%;
+    background-position: center;
+    background-position-y: 52%;
+}
+#hancomHangul .pc-bg{
+    stroke:#E1E1E1;
+}
+#hancomHangul .pc-fill{
+    stroke:#242424;
+}
+#microsoftOfficeWord .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_microsoftOfficeWord.png') no-repeat;
+    background-size:45%;
+    background-position: center;
+    background-position-y: 50%;
+}
+#microsoftOfficeWord .pc-bg{
+    stroke:#E1E1E1;
+}
+#microsoftOfficeWord .pc-fill{
+    stroke:#242424;
+}
+#microsoftOfficeExcel .pc-text{
+    color:transparent;
+    background: url('../images/circleProgress_microsoftOfficeExcel.png') no-repeat;
+    background-size:45%;
+    background-position: center;
+    background-position-y: 50%;
+}
+#microsoftOfficeExcel .pc-bg{
+    stroke:#E1E1E1;
+}
+#microsoftOfficeExcel .pc-fill{
+    stroke:#242424;
+}

@@ -1,0 +1,303 @@
+/*@media(max-width:1290px){
+	div.currentMenu{
+		color: red;
+	}
+}*/
+@font-face {
+    font-family: 'BBTreeGR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    /* Animation */
+    --animation-duration: 300ms;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'BBTreeGR';
+    background-color: black;
+    margin: 0%;
+}
+.eng{
+    
+}
+.kor{
+    display: none;
+}
+.divIntro{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.divTop{
+    width: 100%;
+    height: 270%;
+    background-color: #FFFFE4;
+    display: none;
+    border: 0px solid black;
+}
+.fixedMenu{
+    width: 100%;
+    background-color: #191919;
+    position: fixed;
+    opacity: 1;
+    z-index: 15;
+}
+.currentMenu{
+    color: white;
+    border: 0px solid red;
+    float: left;
+    margin-left: 4%;
+    margin-right: 8%;
+}
+.menu{
+    color: white;
+    border: 0px solid red;
+    float: left;
+    margin-right: 5%;
+}
+.menuLetter{
+    transition: all var(--animation-duration) ease;
+    cursor: pointer;
+}
+.menuLetter:hover{
+    font-size: 120%;
+}
+.menuBar{
+    width: 100%;
+    height: 2%;
+    float: left;
+    background-color: red;
+    display: none;
+}
+.aboutMe1{
+    background-color: #E1E1E1;
+    border: 0px solid red;
+}
+.divProfileMiddleLeft{
+    background-color: #BDBDBD;
+    border: 0px solid transparent;
+    float: left;
+    margin-right: 3%;
+}
+.divProfilePic {
+    border-radius: 70%;
+    overflow: hidden;
+    border: 0px solid red;
+}
+.profilePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileContents{
+    font-family: 'BBTreeGR';
+}
+.profileContents-icon{
+    border: 0px solid pink;
+    float: right;
+}
+.fab, .fas{
+    color: #5D5D5D;
+    
+}
+.icon-margin{
+    transition: all var(--animation-duration) ease;
+    cursor: pointer;
+}
+.lastIcon{
+    margin-right: 50px;
+}
+.fa-github:hover{
+    color: black;
+    transform: scale(1.2);
+}
+.fa-youtube:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.fa-user:hover{
+    color: #EDCE7A;
+    transform: scale(1.2);
+}
+.profileContents-q{
+    border: 0px solid purple;
+    float: right;
+    text-align: left;
+    font-weight: 800;
+}
+.profileContents-a{
+    border: 0px solid yellow;
+    text-align: left;
+    float: right;
+    color: #5D5D5D;
+    overflow:hidden;word-wrap:break-word;
+}
+.profileContents-a-address{
+}
+.divProfileMiddleRight{
+    width: 100%;
+    border: 0px solid brown;
+}
+.profileContents-Introduction-Title{
+    width: 95%;
+    font-weight: 800;
+    border: 0px solid purple;
+}
+.who{
+    font-style: oblique;
+}
+.profileContents-Introduction-Contents{
+    width: 95%;
+    color: #5D5D5D;
+    word-wrap:break-word;
+    border: 0px solid rgb(128, 0, 0);
+    text-align: justify;
+}
+.aboutMe2{
+    width: 100%;
+    background-color: #242424;
+    border: 0px solid black;
+}
+.treeCategory{
+    background-color: #BDBDBD;
+    padding-top: 0.3%;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.treeBranch-title{
+    margin-top: 4%;
+    color: #E1E1E1;
+    border: 0px solid yellow;
+}
+.treeBranch-subTitle{
+    width: 65%;
+    color: #878787;
+    border: 0px solid purple;
+}
+.treeBranch-contents{
+    width: 65%;
+    color: #ABABAB;
+    border: 0px solid salmon;
+    line-height: 1.3;
+    text-align: justify;
+}
+.treeMain{
+    border: 0px solid black;
+    float: left;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.treeMain-shortLine{
+    background-color: #BDBDBD;
+    border: 0px solid black;
+}
+.treeMain-line{
+    background-color: #BDBDBD;
+    border: 0px solid black;
+}
+.treeMain-icon{
+    border-radius: 70%;
+    overflow: hidden;
+    background-color: #BDBDBD;
+}
+.treeMain-icon-size{
+    margin-top: 18%;
+}
+.treeLeftBranch{
+    border: 0px solid blue;
+    float: left;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.treeRightBranch{
+    border: 0px solid blue;
+    float: left;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.tree-active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.aboutMe3{
+    width: 100%;
+    background-color: #E1E1E1;
+    border: 0px solid black;
+}
+.divCategoryOfCircleProgress{
+    padding-bottom: 1%;
+    font-family: 'BBTreeGR';
+    color: #5D5D5D;
+    border-bottom: 5px solid  #5D5D5D;
+    width: 95%;
+}
+.divCircleProgress{
+    border: 0px solid blue;
+    float: left;
+}
+.divNameOfCircleProgress{
+    font-family: 'BBTreeGR';
+    color: #5D5D5D;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.divNameOfCircleProgress-active{
+    opacity: 1;
+    transform: translateY(0px);
+    margin-left: 6%;
+}
+.aboutMe4{
+    width: 100%;
+    background-color: #242424;
+    border: 0px solid black;
+}
+.divProjectLeftMenu{
+    border-right: 5px solid #5D5D5D;
+    border-radius: 20%;
+    overflow: hidden;
+    float: left;
+}
+.divProjectCategory{
+    border: 0px solid blue;
+    color: white;
+    font-family: 'BBTreeGR';
+    font-weight: bold;
+}
+.divProject{
+    margin-top: 5%;
+    border: 0px solid yellowgreen;
+    color: #ABABAB;
+    font-family: 'BBTreeGR';
+}
+.projectLetter{
+    transition: all var(--animation-duration) ease;
+    cursor: pointer;
+}
+.projectLetter:hover{
+    font-size: 118%;
+    color: #E1E1E1;
+}
+.divProjectRightViewNotice{
+    color: #ABABAB;
+    border: 5px solid #5D5D5D;
+    position: absolute;
+    border-radius: 1%;
+    overflow: hidden;
+}
+.divProjectRightView{
+    border: 5px solid #5D5D5D;
+    display: none;
+    position: absolute;
+    border-radius: 1%;
+    overflow: hidden;
+}

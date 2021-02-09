@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- developer css link-->
+    <link rel="stylesheet" href="./css/developer.css" id="developerCSS">
+
+    <!-- toggleSwitch css link -->
+    <link href="./css/toggleSwitchInDeveloper.css" rel="stylesheet" type="text/css" />
+
+    <!-- font-awesome css link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- circle progress bar script src and css-link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/percent-chart.js"></script>
+    <link rel="stylesheet" href="./css/percent-chart.css">
+    <link rel="stylesheet" href="./css/circleProgress.css">
+    
+    <!-- jquery src -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- css for slider -->
+    <link rel="stylesheet" href="./css/slider.css">
+    
+    <!-- developer src -->
+    <script src="./js/developer.js"></script>
+
+    <title>Lim's web portfolio</title>
+</head>
+<body>
+    <!-- intro gif -------------------------------------------------------------------------------------------------------- -->
+    <div class="divIntro">
+        <img src="./images/developer_intro.gif" height="100%" width="100%"/>
+    </div>
+
+    <div class="divTop">
+        <!-- menu -------------------------------------------------------------------------------------------------------- -->
+        <div class="fixedMenu">
+            <div class="currentMenu eng kor" style="display: block;">
+            </div>
+            <div class="menu">
+                <span class="menuLetter">
+                    <span class="eng">
+                        About me
+                    </span>
+                    <span class="kor">
+                        자기 소개
+                    </span>
+                </span>
+            </div>
+            <div class="menu">
+                <span class="menuLetter">
+                    <span class="eng">
+                        My Resume
+                    </span>
+                    <span class="kor">
+                        이력서
+                    </span>
+                </span>
+            </div>
+            <div class="menu">
+                <span class="menuLetter">
+                    <span class="eng">
+                        Skills
+                    </span>
+                    <span class="kor">
+                        보유 기술
+                    </span>
+                </span>
+            </div>
+            <div class="menu">
+                <span class="menuLetter">
+                    <span class="eng">
+                        Project
+                    </span>
+                    <span class="kor">
+                        프로젝트
+                    </span>
+                </span>
+            </div>
+            <div class="divToggleSwitch">
+                <input type="checkbox" id="switch"/><label for="switch"></label>
+            </div>
+            <!-- <input type="button" id="test" value="test"> -->
+            <div class="menuBar"></div>
+        </div>
+
+        <!-- aboutMe1 -------------------------------------------------------------------------------------------------------- -->
+        <div class="aboutMe1">
+            <div class="divProfileMiddleLeft" align="right">
+                <div class="divProfilePic">
+                    <img class="profilePic" src="./images/me_developer.jpg">
+                </div>
+                <div class="profileContents-icon">
+                    <i class="fab fa-github icon-margin iconLink"></i>
+                    <i class="fab fa-youtube icon-margin iconLink"></i>
+                    <i class="fas fa-user lastIcon icon-margin"></i>
+                </div>
+                <div class="profileContents profileContents-a">
+                    <span class="eng">Ui-been Lim</span>
+                    <span class="kor">임의빈</span>
+                </div>
+                <div class="profileContents profileContents-q">
+                    <span class="eng">Full name :</span>
+                    <span class="kor">성명 :</span>
+                </div>
+                <div class="profileContents profileContents-a">
+                    <span class="eng">December 30th, 1991</span>
+                    <span class="kor">1991년 12월 30일</span>
+                </div>
+                <div class="profileContents profileContents-q">
+                    <span class="eng">Birth :</span>
+                    <span class="kor">생년월일 :</span>
+                </div>
+                <div class="profileContents profileContents-a">
+                    <span class="eng">(+82) 010-5818-2878</span>
+                    <span class="kor">(+82) 010-5818-2878</span>
+                </div>
+                <div class="profileContents profileContents-q">
+                    <span class="eng">Phone :</span>
+                    <span class="kor">전화번호 : </span>
+                </div>
+                <div class="profileContents profileContents-a">
+                    <span class="eng">fffrankrosii@gmail.com</span>
+                    <span class="kor">fffrankrosii@gmail.com</span>
+                </div>
+                <div class="profileContents profileContents-q">
+                    <span class="eng">Email :</span>
+                    <span class="kor">이메일 : </span>
+                </div>
+                <div class="profileContents profileContents-a profileContents-a-address">
+                    <span class="eng">
+                        Bucheon-si, Gyeonggi-do,
+                        <p class="eng" style="line-height: 0.1;">
+                            Republic of Korea
+                        </p>
+                    </span>
+                    <span class="kor">
+                        대한민국 경기도 부천시
+                    </span>
+                </div>
+                <div class="profileContents profileContents-q">
+                    <span class="eng">Address :</span>
+                    <span class="kor">주소 : </span>
+                </div>
+            </div>
+            <div class="divProfileMiddleRight">
+                <div class="profileContents-Introduction-Title">
+                    <span class="eng">
+                        The back-end developer
+                        <span class="who">who developes every day</span>
+                    </span>
+                    <span class="kor">
+                        <span class="who">성장하는&nbsp;</span>
+                        백엔드 개발자
+                    </span>
+                </div>
+                <div class="profileContents-Introduction-Contents">
+                    <p style="line-height: 2.5;">
+                        <span class="eng">
+                            "There is no royal road to learning."<br/>
+                            This is the motto that I live by. I believe skillful developers should always be open to changes. 
+                            I am an enthusiastic learner who never misses a chance to operate the new knowledge on the projects.
+                            I hope to have an opportunity where I can contribute to your project.<br/><br/>
+                            Thank you for reading my web-portfolio.
+                        </span>
+                        <span class="kor">
+                            "배움에는 왕도가 없다."<br/>
+                            제가 가장 좋아하는 명언 중 하나 입니다. 계속 성장하고 인정받는 개발자가 되기위해서
+                            항상 배우고 접목하려는 자세로 개발에 임하고 있습니다. 개발에 대한 저의 자세가 앞으로 함께 할 프로젝트에서
+                            빛을 발할 것을 약속드립니다. 대신, 함께 성장해 나갈 수 있는 환경을 만들어 주십시요.
+                            그러면 회사의 성장에 앞장 설 수 있는 개발자가 되겠습니다.<br/><br/>
+                            저의 웹 포트폴리오를 찾아주셔서 감사합니다!
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- aboutMe2 -------------------------------------------------------------------------------------------------------- -->
+        <div class="aboutMe2" align="center">
+            <!-- Work Experience -->
+            <div align="center">
+                <div class="treeCategory">
+                    <span class="eng">Work Experience</span>
+                    <span class="kor">근무 경력</span>
+                </div>
+            </div>
+            <!-- Work Experience : SAT Englsih Instructor -->
+            <div class="treeLeftBranch" align="right">
+                <div class="treeBranch-title">
+                    <span class="eng">SAT English Instructor</span>
+                    <span class="kor">수능 영어 강사</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">Shin-hea Institute - 2018 - 2020</span>
+                    <span class="kor">신혜 학원 - 2018 - 2020</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        As an SAT instructor, I produced my own teaching materials to teach high school students.
+                        I shared my vision with the students and the parents to guide them along every step of studying. 
+                        With strategic educational approach, I guaranteed my students to enter top universities. 
+                    </span>
+                    <span class="kor">
+                        학생을 가르치는 것뿐만 아니라, 학생의 부모님과의 많은 의사소통을 통해, 소비자가 원하는 것을 접하고 
+                        만족시키는 과정을 경험했습니다. 이를 통해, 소비자로서의 시각을 배울 수 있었습니다. 또, 실장의 역을 맡음으로써, 
+                        단지 하나의 근로자가 아닌 회사의 입장에서, 그리고 내가 회사의 운영자라는 생각을 가져야 하고, 그러한 태도를 통해 
+                        원활한 업무가 이루어지며, 그것이 곧 매출상승임을 배웠습니다. 
+                    </span>
+                </div>
+            </div>
+            <!-- Work Experience : tree main -->
+            <div class="treeMain" align="center">
+                <div class="treeMain-shortLine"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-briefcase treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-line"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-briefcase treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-shortLine"></div>
+            </div>
+            <!-- Work Experience : SAT Englsih Instructor -->
+            <div class="treeRightBranch" align="left">
+                <div class="treeBranch-title title-right">
+                    <span class="eng">English GPA Instructor</span>
+                    <span class="kor">중·고등 영어강사</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">Dae-Kyoung Institute - 2016 - 2017</span>
+                    <span class="kor">대경 학원 - 2016 - 2017</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        I encouraged the students to obtain high scores on school examination.
+                        I also conducted a writing class to facilitate their actual use of English.
+                    </span>
+                    <span class="kor">
+                        학생들의 영문법 및 시험대비를 강의 했습니다. 본인의 업무에 항상 미리 준비를 하고, 
+                        항상 변수에 대비 해야 함을 배웠으며, 업무에 대한 강한 책임감을 배웠습니다.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div style="border: 0px solid red;width: 100%;float: left;" align="center">
+                <div class="treeCategory">
+                    <span class="eng">Education</span>
+                    <span class="kor">학력 및 교육 이수</span>
+                </div>
+            </div>
+            <!-- Education : ITWill -->
+            <div class="treeLeftBranch" align="right">
+                <div class="treeBranch-title">
+                    <span class="eng">Java & Oracle Course</span>
+                    <span class="kor">Oracle & Java 개발자 양성 과정</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">ITWill, IT Institute - 2020</span>
+                    <span class="kor">아이티윌 - 2020</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        Not only Java script and Oracle, I also took courses on frameworks and libraries such as Node.js,
+                        Javascript and jQuery. Executing projects with these skills let my knowledge be deepened and widened.
+                        I could also experience how to cooperate and communicate with co-developers during the projects.
+                    </span>
+                    <span class="kor">
+                        자바와 오라클 지식을 습득했고, 이를 통해 4개의 프로젝트를 수행했습니다.
+                        자바에서는 기본적인 문법부터 Thread, 입출력 stream, exception 등 다양한 문법을 배웠고,
+                        오라클에서는 SQL,PL/SQL부터 admin, back-up의 영역까지 지식을 습득했습니다.
+                        더하여, jQuery, ajax, spring, node.js, mongDB 등 다양한 framework와 library, database를 배울 수 있었습니다.
+                        프로젝트 중에 모르는 영역은 API를 읽거나, 구글 검색을 통해 지식을 습득해가며 수행해 나갔습니다.
+                    </span>
+                </div>
+            </div>
+            <!-- Education : tree main -->
+            <div class="treeMain" align="center">
+                <div class="treeMain-shortLine"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-graduation-cap treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-line"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-graduation-cap treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-line"></div>
+            </div>
+            <!-- Education : Baekseok University -->
+            <div class="treeRightBranch" align="left">
+                <div class="treeBranch-title title-right">
+                    <span class="eng">Majoring in English and Social Welfare</span>
+                    <span class="kor">영어학, 사회복지학 복수전공자</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">Baekseok University - 2010 - 2017</span>
+                    <span class="kor">백석대학교 - 2010 - 2017</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        I double majored in English and Social Welfare. Through my academic path,
+                        I could not only achieve English language skills but also contemplate current social issues.
+                        This unique experience led me to cultivate ceaseless curiosity.
+                        Every time I face a challenge or a problem, I don't hesitate to search for its solution,
+                        even from foreign sources. 
+                    </span>
+                    <span class="kor">
+                        영어의 사용뿐만 아니라 영문학을 공부하며 영어적 사고와 철학을 배울 수 있었고,
+                        사회복지학을 공부하면서 인간과 사회에 대한 깊은 고찰과 연구를 하였으며,
+                        의사소통에 대한 이해를 배울 수 있었습니다.
+                    </span>
+                </div>
+            </div>
+
+            <!-- Certificate -->
+            <div style="border: 0px solid red;width: 100%;float: left;" align="center">
+                <div class="treeCategory">
+                    <span class="eng">Certificate</span>
+                    <span class="kor">자격증</span>
+                </div>
+            </div>
+            <!-- Certificate : TOEIC -->
+            <div class="treeLeftBranch" align="right">
+                <div class="treeBranch-title">
+                    <span class="eng">TOEIC</span>
+                    <span class="kor">토익</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">Certificated in - 2017</span>
+                    <span class="kor">응시년도 - 2017</span>
+                </div>
+                <!-- notification : due to length of sentence written in Korean, instead of using span, div is split-->
+                <div class="treeBranch-contents eng">
+                    I got 910 out of 990 on TOEIC(Test of English for International Communication).
+                </div>
+                <div class="treeBranch-contents kor" style="text-align: right;">
+                    국제영어능력인증시험 토익 910점 획득
+                </div>
+            </div>
+            <!-- Certificate : tree main -->
+            <div class="treeMain" align="center">
+                <div class="treeMain-shortLine"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-certificate treeMain-icon-size" style="margin-top: 20%;"></i>
+                </div>
+                <div class="treeMain-shortLine"></div>
+            </div>
+
+            <!-- Social Experience -->
+            <div style="border: 0px solid red;width: 100%;float: left;" align="center">
+                <div class="treeCategory">
+                    <span class="eng">Social Experience</span>
+                    <span class="kor">사회 활동</span>
+                    
+                </div>
+            </div>
+            <!-- Social Experience : IAPCHE Conference -->
+            <div class="treeLeftBranch" align="right">
+                <div class="treeBranch-title">
+                    <span class="eng">IAPCHE Conference</span>
+                    <span class="kor">IAPCHE 국제컨퍼런스 관리</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">Baekseok University - 2016</span>
+                    <span class="kor">백석대학교 - 2016</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        I took part in the International Association for the Promotion of Christian Higher Education (IAPCHE)
+                        at the university as a language assistant. My responsibility was to support smooth progress of the conference
+                        and to ensure foreign professors to stay in comfort.
+                    </span>
+                    <span class="kor">
+                        세계 각 국의 교수가 참여한 제8회 국제기독교대학협의회 국제컨퍼런스에서 관리자를 맡았습니다.
+                        국제 공용어인 영어로 의사소통 하여 참가 교수들의 원할한 회담과 편안한 방문이 되도록 안내 및 관리를 했습니다.
+                    </span>
+                </div>
+            </div>
+            <!-- Social Experience : tree main -->
+            <div class="treeMain" align="center">
+                <div class="treeMain-shortLine"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-user-plus treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-line"></div>
+                <div class="treeMain-icon" align="center">
+                    <i class="fas fa-user-plus treeMain-icon-size"></i>
+                </div>
+                <div class="treeMain-shortLine"></div>
+            </div>
+            <!-- Social Experience : Translator -->
+            <div class="treeRightBranch" align="left">
+                <div class="treeBranch-title title-right">
+                    <span class="eng">Interpreter</span>
+                    <span class="kor">한·중 청소년 문화 교류 통역</span>
+                </div>
+                <div class="treeBranch-subTitle">
+                    <span class="eng">KYWA - 2013</span>
+                    <span class="kor">한국청소년활동진흥원 - 2013</span>
+                </div>
+                <div class="treeBranch-contents">
+                    <span class="eng">
+                        I had a managerial role at a cultural exchange program between Korea and China.
+                        I worked as a translator in China. 
+                    </span>
+                    <span class="kor">
+                        한국과 중국의 청소년 문화교류에서 한국 청소년 지도 대표 및 영어 통역으로서 참가했습니다.
+                        한국 대표 청소년들의 의사소통과 안전한 타국 방문을 이끌었습니다. 
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- aboutMe3 -------------------------------------------------------------------------------------------------------- -->
+        <div class="aboutMe3" align="center">
+            <div style="height: 100%;width: 100%;padding-top: 6%;">
+                <!-- category : Programming Skills -->
+                <div class="divCategoryOfCircleProgress" align="left">
+                    <span class="eng">Programming Skills</span>
+                    <span class="kor">프로그래밍 기술</span>
+                </div>
+                <!-- circle progress : java -->
+                <div class="divCircleProgress" align="center">
+                    <div id="java" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Java&nbsp;&nbsp;95%</span>
+                        <span class="kor">자바&nbsp;&nbsp;95%</span>
+                    </div>
+                </div>
+                <!-- circle progress : oracle -->
+                <div class="divCircleProgress" align="center">
+                    <div id="oracle" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Oracle&nbsp;&nbsp;93%</span>
+                        <span class="kor">오라클&nbsp;&nbsp;93%</span>
+                    </div>
+                </div>
+                <!-- circle progress : javascript -->
+                <div class="divCircleProgress" align="center">
+                    <div id="javascript" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Javascript&nbsp;&nbsp;90%</span>
+                        <span class="kor">자바스크립트&nbsp;&nbsp;90%</span>
+                    </div>
+                </div>
+                <!-- circle progress : jquery -->
+                <div class="divCircleProgress" align="center">
+                    <div id="jquery" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">jQuery&nbsp;&nbsp;85%</span>
+                        <span class="kor">제이쿼리&nbsp;&nbsp;85%</span>
+                    </div>
+                </div>
+                <div class="divCircleProgress" align="center">
+                    <div id="ajax" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Ajax&nbsp;&nbsp;83%</span>
+                        <span class="kor">에이잭스&nbsp;&nbsp;83%</span>
+                    </div>
+                </div>
+                <!-- circle progress : node.js -->
+                <div class="divCircleProgress" align="center">
+                    <div id="nodejs" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Node.js&nbsp;&nbsp;75%</span>
+                        <span class="kor">노드제이에스&nbsp;&nbsp;75%</span>
+                    </div>
+                </div>
+                <!-- circle progress : express -->
+                <div class="divCircleProgress" align="center">
+                    <div id="express" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Express&nbsp;&nbsp;75%</span>
+                        <span class="kor">엑스프레스&nbsp;&nbsp;75%</span>
+                    </div>
+                </div>
+                <!-- circle progress : html5 -->
+                <div class="divCircleProgress" align="center">
+                    <div id="html5" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">HTML5&nbsp;&nbsp;70%</span>
+                        <span class="kor">HTML5&nbsp;&nbsp;70%</span>
+                    </div>
+                </div>
+                <!-- circle progress : css3 -->
+                <div class="divCircleProgress" align="center">
+                    <div id="css3" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">CSS3&nbsp;&nbsp;65%</span>
+                        <span class="kor">CSS5&nbsp;&nbsp;65%</span>
+                    </div>
+                </div>
+                <!-- circle progress : mongodb -->
+                <div class="divCircleProgress" align="center">
+                    <div id="mongodb" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">MongoDB&nbsp;&nbsp;60%</span>
+                        <span class="kor">몽고디비&nbsp;&nbsp;60%</span>
+                    </div>
+                </div>
+                <!-- circle progress : mongoose -->
+                <div class="divCircleProgress" align="center">
+                    <div id="mongoose" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Mongoose&nbsp;&nbsp;60%</span>
+                        <span class="kor">몽구스&nbsp;&nbsp;60%</span>
+                    </div>
+                </div>
+                <!-- category : Extra Skills -->
+                <div class="divCategoryOfCircleProgress" align="left" style="float: left;margin-left: 2.5%;margin-top: 4%;">
+                    <span class="eng">Extra Skills</span>
+                    <span class="kor">그 외 기술</span>
+                </div>
+                <!-- circle progress : english -->
+                <div class="divCircleProgress" align="center">
+                    <div id="english" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">English&nbsp;&nbsp;90%</span>
+                        <span class="kor">영어&nbsp;&nbsp;90%</span>
+                    </div>
+                </div>
+                <!-- circle progress : hancom hangul -->
+                <div class="divCircleProgress" align="center">
+                    <div id="hancomHangul" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Hancom Hangul&nbsp;&nbsp;90%</span>
+                        <span class="kor">한컴 한글&nbsp;&nbsp;90%</span>
+                    </div>
+                </div>
+                <!-- circle progress : Microsoft Office Word -->
+                <div class="divCircleProgress" align="center">
+                    <div id="microsoftOfficeWord" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Microsoft Office Word&nbsp;&nbsp;80%</span>
+                        <span class="kor">마이스크소프트 워드&nbsp;&nbsp;80%</span>
+                    </div>
+                </div>
+                <!-- circle progress : Microsoft Office Excel -->
+                <div class="divCircleProgress" align="center">
+                    <div id="microsoftOfficeExcel" class="circleProgress"></div>
+                    <div class="divNameOfCircleProgress">
+                        <span class="eng">Microsoft Office Excel&nbsp;&nbsp;75%</span>
+                        <span class="kor">마이스크소프트 엑셀&nbsp;&nbsp;75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- caution : don't remove script below / 주의 : 밑에 스크립트는 꼭 아래에 위치되어 있어야함.-->
+            <script src="./js/circleProgress.js"></script>
+        </div>
+
+        <!-- aboutMe4 -------------------------------------------------------------------------------------------------------- -->
+        <div class="aboutMe4">
+            <div style="height: 100%;width: 100%;">
+                <div class="divProjectLeftMenu" align="center">
+                    <div class="divProjectCategory" style="margin-top: 20%;">
+                        <span class="eng">Web</span>
+                        <span class="kor">Web</span>
+                    </div>
+                    <div class="divProject">
+                        <span class="projectLetter">
+                            <span class="eng">Cyworld</span>
+                            <span class="kor">싸이월드</span>
+                        </span>
+                    </div>
+                    <div class="divProject">
+                        <span class="projectLetter">
+                            <span class="eng">Goobne Mall</span>
+                            <span class="kor">굽네몰</span>
+                        </span>
+                    </div>
+                    <div class="divProjectCategory" style="margin-top: 20%;">
+                        <span class="eng">Java Console</span>
+                        <span class="kor">Java Console</span>
+                    </div>
+                    <div class="divProject">
+                        <span class="projectLetter">
+                            <span class="eng">Yanolja</span>
+                            <span class="kor">야놀자</span>
+                        </span>
+                    </div>
+                    <div class="divProject">
+                        <span class="projectLetter">
+                            <span class="eng">Rhythm Power</span>
+                            <span class="kor">리듬파워</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- portfolio : cyworld -->
+                <div class="divProjectRightViewNotice" align="center">
+                    <p class="notice-chooseOnePortfolio eng">choose one portfolio</p>
+                    <p class="notice-chooseOnePortfolio kor">왼쪽에 포트폴리오를 선택하세요.</p>
+                </div>
+
+                <!-- portfolio : cyworld -->
+                <div class="divProjectRightView" align="left">
+                    <!-- Slider -->
+                    <article class="slider-cyworld">
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (1).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (2).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (3).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (4).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (5).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (6).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (7).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (8).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (9).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (10).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (11).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (12).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (13).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (14).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (15).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (16).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (17).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (18).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (19).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (20).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (21).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (22).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (23).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (24).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (25).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (26).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (27).png" alt="">
+                        </section>
+                        <section class="slide-cyworld">
+                            <img src=".\images\portfolio\cyworld\cyworld (28).png" alt="">
+                        </section>
+
+                        <nav class="slider-nav-cyworld">
+                            <span class="prev-slide" id="prev-slide-cyworld"></span>
+                            <span class="next-slide" id="next-slide-cyworld"></span>
+                        </nav>
+                    </article>
+                    <!-- end Slider -->
+                </div>
+
+                <!-- portfolio : goobne -->
+                <div class="divProjectRightView" align="left">
+                    <!-- Slider -->
+                    <article class="slider-goobne">
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (1).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (2).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (3).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (4).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (5).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (6).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (7).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (8).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (9).png" alt="">
+                        </section>
+                        <section class="slide-goobne">
+                            <img src=".\images\portfolio\goobne\goobne (10).png" alt="">
+                        </section>
+        
+                        <nav class="slider-nav-goobne">
+                            <span class="prev-slide" id="prev-slide-goobne"></span>
+                            <span class="next-slide" id="next-slide-goobne"></span>
+                        </nav>
+                    </article>
+                    <!-- end Slider -->
+                </div>
+
+                 <!-- portfolio : yanolja -->
+                 <div class="divProjectRightView" align="left">
+                    <!-- Slider -->
+                    <article class="slider-yanolja">
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (1).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (2).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (3).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (4).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (5).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (6).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (7).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (8).png" alt="">
+                        </section>
+                        <section class="slide-yanolja">
+                            <img src=".\images\portfolio\yanolja\yanolja (9).png" alt="">
+                        </section>
+                    
+                        <nav class="slider-nav-yanolja">
+                            <span class="prev-slide" id="prev-slide-yanolja"></span>
+                            <span class="next-slide" id="next-slide-yanolja"></span>
+                        </nav>
+                    </article>
+                    <!-- end Slider -->
+                </div>
+
+                 <!-- portfolio : rhythm power -->
+                 <div class="divProjectRightView" align="left">
+                    <!-- Slider -->
+                    <article class="slider-rhythm-power">
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (1).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (2).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (3).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (4).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (5).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (6).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (7).png" alt="">
+                        </section>
+                        <section class="slide-rhythm-power">
+                            <img src=".\images\portfolio\rhythm power\rhythm-power (8).png" alt="">
+                        </section>
+                    
+                        <nav class="slider-nav-rhythm-power">
+                            <span class="prev-slide" id="prev-slide-rhythm-power"></span>
+                            <span class="next-slide" id="next-slide-rhythm-power"></span>
+                        </nav>
+                    </article>
+                    <!-- end Slider -->
+                </div>
+                
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	            <script src="./js/slider.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
