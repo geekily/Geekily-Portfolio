@@ -434,7 +434,7 @@ $(document).ready(function(){
         if($('.iconLink').index(this)==0){
             window.open('https://github.com/geekily', '_blank');
         }else if($('.iconLink').index(this)==1){
-            window.open('https://www.youtube.com/channel/UCNn_5gfxpAbTIcuvVD8CQiQ', '_blank');
+            window.open('https://www.youtube.com/channel/UC-MiTToZKoAIe5dy2t91iAA', '_blank');
         }else if($('.iconLink').index(this)==2){
             window.open('', '_blank');
         }
